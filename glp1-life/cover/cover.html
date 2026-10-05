@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Living on GLP-1 Medicines cover</title>
+<!--
+  DANA WHITFIELD. Book One of the Health Series - the fifth cover grammar in the catalogue.
+  It keeps the house DNA (Georgia caps title, Segoe UI support type, one hand-drawn solid SVG
+  motif, a single accent colour) while taking a ground and a structure no other line owns:
+    Family Paperwork (Ruth)         dark forest green ground, accent bands top AND bottom
+    Plain Talk Retirement (Walt)    ivory ground, hairline top + dark navy footer slab
+    Caring for Mom and Dad (Maggie) warm oat ground, inset double frame + accent pill
+    Gray Divorce (Carol)            graphite ground, hairline top + solid accent footer band
+    HEALTH SERIES (Dana)            chalk ground #f7f7f3, warm ochre #d9962b,
+                                    full-bleed ochre title block floating mid-canvas,
+                                    no edge band and no frame
+  Rules: 1600x2560 canvas, system fonts only, no external URLs, every text element keeps data-text.
+-->
+<style>
+:root{
+  --chalk:#f7f7f3;
+  --chalk2:#eeeee6;
+  --ink:#23291d;
+  --muted:#5d6354;
+  --ochre:#d9962b;
+  --kdp:#9aa2a6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1600px;height:2560px;overflow:hidden}
+body{
+  background:
+    radial-gradient(1400px 1000px at 50% 18%, #ffffff 0%, rgba(255,255,255,0) 70%),
+    linear-gradient(172deg, var(--chalk) 0%, var(--chalk) 58%, var(--chalk2) 100%);
+  color:var(--ink);
+  font-family:'Segoe UI','Bahnschrift','Arial',sans-serif;
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  padding:126px 0 132px;
+}
+
+/* KDP advice: a light cover needs a visible edge on a white retail page. */
+.edge{position:fixed;inset:0;border:4px solid var(--kdp);pointer-events:none}
+
+.kicker{
+  flex:0 0 auto;
+  font-size:50px;font-weight:700;letter-spacing:13px;text-transform:uppercase;
+  color:var(--muted);
+}
+
+.titleblock{
+  flex:0 0 auto;width:1600px;background:var(--ochre);
+  padding:86px 80px 96px;margin-top:92px;
+}
+.title{
+  font-family:'Georgia','Cambria','Palatino Linotype',serif;
+  font-weight:700;text-transform:uppercase;
+  display:flex;flex-direction:column;align-items:center;
+  padding-bottom:22px; /* Georgia descenders drop below the flex line box at this size */
+}
+.title span{
+  display:block;white-space:nowrap;
+  font-size:232px;line-height:1.02;letter-spacing:-14px;text-indent:14px;
+  color:var(--ink);
+}
+
+.subtitle{
+  flex:0 0 auto;margin-top:78px;max-width:1260px;
+  font-size:80px;line-height:1.26;font-weight:600;color:var(--muted);
+}
+
+.art{flex:0 0 auto;width:1240px;height:598px;margin:auto 0}
+.art svg{display:block;width:1240px;height:598px}
+
+.tagline{
+  flex:0 0 auto;max-width:1180px;margin-bottom:76px;
+  font-size:54px;line-height:1.3;font-weight:500;letter-spacing:2px;color:var(--muted);
+}
+
+.author{
+  flex:0 0 auto;
+  font-size:88px;font-weight:700;letter-spacing:11px;text-transform:uppercase;color:var(--ink);
+  white-space:nowrap;
+}
+</style></head>
+<body>
+
+  <div class="kicker" data-text="kicker">Health Series &middot; Book One</div>
+
+  <div class="titleblock">
+    <h1 class="title" data-text="title">
+      <span>Living on</span>
+      <span>GLP-1</span>
+      <span>Medicines</span>
+    </h1>
+  </div>
+
+  <p class="subtitle" data-text="subtitle">Protein, Muscle and Maintenance</p>
+
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 1160 540" xmlns="http://www.w3.org/2000/svg">
+      <!-- A dumbbell resting on a dinner plate: the whole argument of the book in two solid
+           shapes. The plate is the warm ring; the weight is the dark focal object, because
+           muscle is the thing you have to defend while the appetite goes quiet. -->
+      <ellipse cx="580" cy="300" rx="500" ry="232" fill="var(--ochre)"/>
+      <ellipse cx="580" cy="300" rx="414" ry="168" fill="var(--chalk)"/>
+      <g fill="var(--ink)">
+        <rect x="372" y="268" width="416" height="64" rx="32"/>
+        <rect x="286" y="196" width="96" height="208" rx="28"/>
+        <rect x="778" y="196" width="96" height="208" rx="28"/>
+        <rect x="222" y="232" width="74" height="136" rx="24"/>
+        <rect x="864" y="232" width="74" height="136" rx="24"/>
+      </g>
+    </svg>
+  </div>
+
+  <p class="tagline" data-text="tagline">For the Life You&rsquo;re Building Now</p>
+
+  <div class="author" data-text="author">Dana Whitfield</div>
+
+  <div class="edge"></div>
+</body></html>

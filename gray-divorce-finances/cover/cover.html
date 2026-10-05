@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Gray Divorce After 50 cover</title>
+<!--
+  CAROL DUNN standalone finance title. Fourth cover grammar in the catalogue, built so it
+  shares the house DNA (Georgia caps title + Segoe UI support type, one hand-drawn SVG motif,
+  one accent colour carrying the author) while taking a ground none of the three series owns:
+    Family Paperwork (Ruth)        dark forest green ground, gold / copper / slate blue
+    Plain Talk Retirement (Walt)   ivory ground, brick / pine, navy footer slab
+    Caring for Mom and Dad (Maggie) warm oat ground, terracotta / dusty blue, inset frame
+    THIS BOOK (Carol)              graphite ground #272d33, accent jade #5cbf8f,
+                                   full-bleed accent hairline top + solid accent footer band
+  Rules: 1600x2560 canvas, system fonts only, no external URLs, every text element keeps data-text.
+-->
+<style>
+:root{
+  --ground:#272d33;
+  --ground2:#1b2025;
+  --cream:#f3efe6;
+  --accent:#5cbf8f;
+  --accent-ink:#16202a;
+  --soft:#b9c2c6;
+  --sage:#9fb6a9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1600px;height:2560px;overflow:hidden}
+body{
+  background:
+    radial-gradient(1500px 1150px at 50% 24%, rgba(255,255,255,.07) 0%, rgba(255,255,255,0) 70%),
+    linear-gradient(168deg, var(--ground) 0%, var(--ground) 54%, var(--ground2) 100%);
+  color:var(--cream);
+  font-family:'Segoe UI','Bahnschrift','Arial',sans-serif;
+  display:flex;flex-direction:column;
+}
+
+.topband{flex:0 0 auto;height:26px;background:var(--accent)}
+
+.main{
+  flex:1 1 auto;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  text-align:center;padding:224px 110px 90px;
+}
+
+.title{
+  font-family:'Georgia','Cambria','Palatino Linotype',serif;
+  font-weight:700;text-transform:uppercase;
+  display:flex;flex-direction:column;align-items:center;
+  padding-bottom:26px; /* Georgia descenders sit below the line box at this size */
+}
+.title span{
+  display:block;white-space:nowrap;
+  font-size:244px;line-height:1.01;letter-spacing:-12px;text-indent:12px;
+  color:var(--cream);
+}
+.title span.alt{color:var(--accent)}
+
+.rule{flex:0 0 auto;width:380px;height:14px;background:var(--accent);border-radius:7px;margin:78px 0 62px}
+
+.subtitle{
+  font-size:78px;line-height:1.28;font-weight:600;color:var(--soft);
+  max-width:1180px;
+}
+
+.art{width:1060px;height:470px;flex:0 0 auto;margin-top:auto}
+.art svg{display:block;width:1060px;height:470px}
+
+.tagline{
+  margin-top:auto;margin-bottom:40px;max-width:1160px;
+  font-size:52px;line-height:1.3;font-weight:500;color:var(--sage);letter-spacing:2px;
+}
+
+.foot{
+  flex:0 0 auto;height:250px;background:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+}
+.author{
+  font-family:'Georgia','Cambria','Palatino Linotype',serif;
+  font-size:92px;font-weight:700;letter-spacing:4px;
+  color:var(--accent-ink);white-space:nowrap;
+}
+</style></head>
+<body>
+
+  <div class="topband"></div>
+
+  <div class="main">
+    <h1 class="title" data-text="title">
+      <span>Gray</span>
+      <span>Divorce</span>
+      <span class="alt">After 50</span>
+    </h1>
+
+    <div class="rule"></div>
+
+    <p class="subtitle" data-text="subtitle">The Money Moves That Actually Matter</p>
+
+    <div class="art" aria-hidden="true">
+      <svg viewBox="0 0 1120 490" xmlns="http://www.w3.org/2000/svg">
+        <!-- One pot, two households. The cut is deliberately off-centre: after fifty the
+             split is negotiated and taxed, not automatically half. -->
+        <defs>
+          <clipPath id="cutL" clipPathUnits="userSpaceOnUse"><rect x="0" y="0" width="520" height="490"/></clipPath>
+          <clipPath id="cutR" clipPathUnits="userSpaceOnUse"><rect x="600" y="0" width="520" height="490"/></clipPath>
+        </defs>
+        <circle cx="492" cy="245" r="238" fill="var(--cream)" clip-path="url(#cutL)"/>
+        <circle cx="628" cy="245" r="238" fill="var(--accent)" clip-path="url(#cutR)"/>
+      </svg>
+    </div>
+
+    <p class="tagline" data-text="tagline">House, Retirement Accounts, and Starting Over Solvent</p>
+  </div>
+
+  <div class="foot">
+    <div class="author" data-text="author">Carol Dunn</div>
+  </div>
+
+</body></html>

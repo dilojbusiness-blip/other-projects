@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Estate Planning for Beginners cover</title>
+<!--
+  THE FAMILY PAPERWORK SERIES - shared cover system.
+  To make a sibling book, copy this file and change only --accent plus the text.
+  Ground, bands, folder motif, type scale and spacing stay identical across the series.
+    Book 1  estate-planning-beginners  --accent #e8b45c  gold
+    Book 2  executor-guide             --accent #d9814e  copper
+    Book 3  parent-dies-first-90-days  --accent #8fbdd0  slate blue
+  Rules: 1600x2560 canvas, system fonts only, no external URLs, every text element keeps data-text.
+-->
+<style>
+:root{
+  --accent:#e8b45c;
+  --ground:#14332a;
+  --ground2:#1e4a3a;
+  --panel:#204a3b;
+  --ink:#f7f3e8;
+  --soft:#c4dbcb;
+  --paper:#f3eddd;
+  --paper2:#d8cfb8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1600px;height:2560px;overflow:hidden}
+body{
+  background:
+    radial-gradient(1500px 1150px at 50% 36%, rgba(255,255,255,.06) 0%, rgba(255,255,255,0) 72%),
+    linear-gradient(172deg, var(--ground) 0%, var(--ground) 52%, var(--ground2) 100%);
+  color:var(--ink);
+  font-family:'Segoe UI','Bahnschrift','Arial',sans-serif;
+  display:flex;flex-direction:column;text-align:center;
+}
+
+/* series bands: the only element whose colour changes per book */
+.band{background:var(--accent);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.band-top{height:212px}
+.band-bottom{height:280px}
+.series{
+  display:flex;align-items:baseline;justify-content:center;gap:26px;
+  font-weight:700;text-transform:uppercase;color:var(--ground);white-space:nowrap;
+}
+.series .name{font-size:54px;letter-spacing:6px}
+.series .dot{font-size:44px;opacity:.65}
+.series .num{font-size:44px;letter-spacing:4px;font-weight:600;opacity:.85}
+.author{
+  font-size:96px;font-weight:700;letter-spacing:16px;text-transform:uppercase;
+  color:var(--ground);white-space:nowrap;
+}
+
+.main{flex:1 1 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 80px}
+.art{width:540px;height:521px;flex:0 0 auto}
+.art svg{display:block;width:540px;height:521px}
+
+.title{
+  font-family:'Georgia','Cambria','Palatino Linotype',serif;
+  font-weight:700;font-size:250px;line-height:.98;letter-spacing:-5px;text-transform:uppercase;
+  margin-top:78px;display:flex;flex-direction:column;align-items:center;
+}
+.title .lead{display:block;white-space:nowrap}
+.title .tail{
+  display:block;white-space:nowrap;
+  font-family:'Segoe UI','Bahnschrift','Arial',sans-serif;
+  font-size:124px;font-weight:600;letter-spacing:14px;line-height:1.2;
+  color:var(--accent);margin-top:30px;
+}
+.rule{width:300px;height:14px;background:var(--accent);border-radius:7px;margin:60px 0 52px}
+.subtitle{font-size:66px;line-height:1.32;font-weight:500;color:var(--soft);max-width:1250px}
+</style></head>
+<body>
+
+  <div class="band band-top"><div class="series" data-text="series"><span class="name">The Family Paperwork Series</span><span class="dot">&bull;</span><span class="num">Book One</span></div></div>
+
+  <div class="main">
+    <div class="art" aria-hidden="true">
+      <svg viewBox="0 0 560 540" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 452 L30 96 Q30 70 56 70 L198 70 Q215 70 225 84 L252 121 L504 121 Q530 121 530 147 L530 452 Z"
+              fill="none" stroke="var(--accent)" stroke-width="14" stroke-linejoin="round"/>
+        <rect x="112" y="142" width="330" height="248" rx="8" fill="var(--paper2)" transform="rotate(-4 277 266)"/>
+        <rect x="124" y="134" width="318" height="256" rx="8" fill="var(--paper2)" transform="rotate(4 283 262)"/>
+        <rect x="132" y="126" width="300" height="264" rx="8" fill="var(--paper)"/>
+        <g stroke="#93ad9d" stroke-width="12" stroke-linecap="round">
+          <line x1="170" y1="172" x2="394" y2="172"/>
+          <line x1="170" y1="212" x2="394" y2="212"/>
+          <line x1="170" y1="252" x2="330" y2="252"/>
+        </g>
+        <path d="M28 450 L28 268 Q28 242 54 242 L506 242 Q532 242 532 268 L532 450 Q532 476 506 476 L54 476 Q28 476 28 450 Z"
+              fill="var(--panel)" stroke="var(--accent)" stroke-width="14" stroke-linejoin="round"/>
+        <circle cx="462" cy="452" r="74" fill="var(--accent)"/>
+        <path d="M428 452 L452 478 L498 426" fill="none" stroke="var(--ground)" stroke-width="22"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <h1 class="title" data-text="title">
+      <span class="lead">Estate</span>
+      <span class="lead">Planning</span>
+      <span class="tail">for Beginners</span>
+    </h1>
+
+    <div class="rule"></div>
+
+    <p class="subtitle" data-text="subtitle">Wills, Trusts, Powers of Attorney and Beneficiary Forms, in Plain English</p>
+  </div>
+
+  <div class="band band-bottom"><div class="author" data-text="author">Ruth Calloway</div></div>
+
+</body></html>

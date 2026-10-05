@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>The Dementia Caregiver's First Year cover</title>
+<!--
+  CARING FOR MOM AND DAD SERIES - shared cover system (Maggie Holloway), Book Two.
+  Grammar inherited unchanged from Book One (downsizing-parent):
+    warm oat ground, inset double accent frame, solid accent pill at top,
+    cocoa serif caps title with the last line set in the accent, solid two-object
+    motif on a full-width ground line, Georgia mixed-case author, no footer slab.
+  Only the accent, the motif and the text change between siblings.
+    Book 1  downsizing-parent   --accent #a84a22  terracotta   motif: big house -> small house
+    Book 2  dementia-caregiver  --accent #3d6680  dusty blue   motif: armchair + lit lamp
+  Rules: 1600x2560 canvas, system fonts only, no external URLs, every text element keeps data-text.
+-->
+<style>
+:root{
+  --paper:#f4e9d8;
+  --paper2:#e8d9c0;
+  --cocoa:#3a2a23;
+  --accent:#3d6680;
+  --accent2:#5a86a3;
+  --cream:#fdf8ef;
+  --muted:#6a5347;
+  --edge:#9aa2a6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1600px;height:2560px;overflow:hidden}
+body{
+  background:
+    radial-gradient(1500px 1100px at 50% 26%, rgba(255,255,255,.72) 0%, rgba(255,255,255,0) 72%),
+    linear-gradient(166deg, var(--paper) 0%, var(--paper) 56%, var(--paper2) 100%);
+  color:var(--cocoa);
+  font-family:'Segoe UI','Bahnschrift','Arial',sans-serif;
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  padding:150px 130px 140px;
+}
+.edge{position:absolute;inset:0;border:4px solid var(--edge);pointer-events:none;z-index:4}
+.frame{position:absolute;inset:72px;border:6px solid var(--accent);opacity:.9;pointer-events:none;z-index:1}
+.frame::after{content:"";position:absolute;inset:16px;border:2px solid var(--accent);opacity:.45}
+
+.head{flex:0 0 auto;z-index:2}
+.pill{
+  display:inline-flex;align-items:baseline;gap:26px;white-space:nowrap;
+  background:var(--accent);color:var(--cream);
+  padding:30px 60px 34px;border-radius:14px;
+}
+.pill .name{font-size:48px;font-weight:700;letter-spacing:7px;text-transform:uppercase}
+.pill .dot{font-size:34px;opacity:.7}
+.pill .num{font-size:40px;font-weight:600;letter-spacing:5px;text-transform:uppercase;opacity:.92}
+
+.main{flex:1 1 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2;width:100%}
+
+.title{
+  font-family:'Georgia','Cambria','Palatino Linotype',serif;
+  font-weight:700;text-transform:uppercase;
+  display:flex;flex-direction:column;align-items:center;
+}
+.title span{
+  display:block;white-space:nowrap;
+  font-size:202px;line-height:1.04;letter-spacing:-15px;color:var(--cocoa);
+}
+.title span.the{
+  font-size:78px;line-height:1.1;letter-spacing:28px;
+  color:var(--muted);margin-bottom:14px;text-indent:28px;
+}
+.title span.alt{color:var(--accent)}
+
+.rule{width:420px;height:12px;background:var(--accent);border-radius:6px;margin:62px 0 56px;z-index:2}
+
+.subtitle{
+  font-size:70px;line-height:1.28;font-weight:600;color:var(--muted);
+  max-width:1120px;z-index:2;
+}
+
+.art{width:1060px;height:436px;flex:0 0 auto;margin-top:72px;z-index:2}
+.art svg{display:block;width:1060px;height:436px}
+
+.foot{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;z-index:2}
+.byline{font-size:42px;font-weight:600;letter-spacing:12px;text-transform:uppercase;color:var(--accent);margin-bottom:34px}
+.author{
+  font-family:'Georgia','Cambria','Palatino Linotype',serif;
+  font-size:84px;font-weight:700;letter-spacing:4px;
+  color:var(--cocoa);white-space:nowrap;
+}
+</style></head>
+<body>
+
+  <div class="edge"></div>
+  <div class="frame"></div>
+
+  <div class="head">
+    <div class="pill" data-text="series"><span class="name">Caring for Mom and Dad</span><span class="dot">&bull;</span><span class="num">Book Two</span></div>
+  </div>
+
+  <div class="main">
+    <h1 class="title" data-text="title">
+      <span class="the">The</span>
+      <span>Dementia</span>
+      <span>Caregiver&rsquo;s</span>
+      <span class="alt">First Year</span>
+    </h1>
+
+    <div class="rule"></div>
+
+    <p class="subtitle" data-text="subtitle">Diagnosis, Safety, Hard Days, and Protecting Yourself</p>
+
+    <div class="art" aria-hidden="true">
+      <svg viewBox="0 0 1120 460" xmlns="http://www.w3.org/2000/svg">
+        <!-- the pool of light the lamp throws across the room -->
+        <polygon points="738,214 950,214 1050,446 638,446" fill="var(--accent)" opacity=".15"/>
+
+        <!-- the chair she still sits in -->
+        <g fill="var(--cocoa)">
+          <rect x="160" y="112" width="290" height="262" rx="48"/>
+          <rect x="100" y="258" width="72" height="152" rx="30"/>
+          <rect x="438" y="258" width="72" height="152" rx="30"/>
+          <rect x="150" y="338" width="310" height="74" rx="20"/>
+          <rect x="164" y="408" width="36" height="38"/>
+          <rect x="410" y="408" width="36" height="38"/>
+        </g>
+        <rect x="215" y="182" width="180" height="128" rx="26" fill="var(--accent)"/>
+
+        <!-- the lamp somebody remembered to leave on -->
+        <polygon points="784,96 906,96 950,210 740,210" fill="var(--accent)"/>
+        <g fill="var(--cocoa)">
+          <rect x="834" y="206" width="22" height="240"/>
+          <rect x="768" y="420" width="154" height="26" rx="13"/>
+        </g>
+
+        <rect x="0" y="447" width="1120" height="13" fill="var(--cocoa)"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="byline" data-text="byline">A Practical Guide</div>
+    <div class="author" data-text="author">Margaret &ldquo;Maggie&rdquo; Holloway</div>
+  </div>
+
+</body></html>
